@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <title>Happy Birthday</title>
+</head>
+<body>
+  <div class="birthday-card">
+    <div class="card-header">
+      <h2>Happy Birthday! <i class="fas fa-birthday-cake"></i></h2>
+    </div>
+    <p class="card-title">さおりさん 、</p>
+    <div class="card-body">
+      <p>
+        今日はあなたのお誕生日ですね！
+        心からおめでとうございます！
+        さおりさんの新しい一年が、素晴らしく、幸せで、笑顔にあふれたものでありますように。
+        すべての夢と願いが叶いますように！
+        素敵な一日をお過ごしください。
+        
+        よろしくお願いします。
+      </p>
+    </div>
+    <div class="card-footer">
+      <p>Hung</p>
+    </div>
+  </div>    
+  <div class="stars-background">
+  </div>
+</body>
+
+<script>
+  const starsContainer = document.querySelector('.stars-background');
+  for (let i = 0; i < 100; i++) {
+    const star = document.createElement('div');
+    star.className = 'star';
+    star.style.left = `${Math.random() * 100}%`;
+    star.style.top = `${Math.random() * 100}%`;
+    star.style.setProperty('--star-brightness', Math.random());
+    starsContainer.appendChild(star);
+  }
+</script>
+</html>
+
+
+ 
